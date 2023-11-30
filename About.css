@@ -1,0 +1,341 @@
+/* Main Container */
+.mainContainer {
+    position: relative;
+    margin-top: 35px;
+    height: fit-content;
+    border: 3px solid yellow;
+    padding: 20px 40px;
+}
+
+/* mainContainer Header */
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 25px;
+    border: 2px solid purple;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: darkcyan;
+}
+
+.heading p {
+    font-size: 18px;
+    color: darkcyan;
+    margin-bottom: 35px;
+}
+
+/* ABOUT US SECTION */
+.aboutUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid pink;
+}
+
+/* About Us Image */
+.aboutUs-img {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border: 2px #000 solid;
+}
+
+.aboutUs-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.aboutUs-img:hover img {
+    transform: scale(1.2);
+}
+
+/* About Us Content */
+.aboutUs-content {
+    flex: 1;
+}
+
+.aboutUs-content h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.aboutUs-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Read More About Us Button */
+.aboutUs-content .read-more-aboutUs {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: 1px solid black;
+    transition: 0.3 ease;
+}
+
+.aboutUs-content .read-more-aboutUs:hover {
+    background-color: #34495e;
+    border: 1px solid transparent;
+    color: cyan;
+}
+
+/* ABOUT PESO SECTION */
+.aboutPeso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 2px solid pink;
+}
+
+/* About Peso Image */
+.aboutPeso-img {
+    flex: 1;
+    margin-left: 40px;
+    overflow: hidden;
+    /* border for visualization */
+    border: 2px #000 solid;
+}
+
+.aboutPeso-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.aboutPeso-img:hover img {
+    transform: scale(1.2);
+}
+
+/* About Peso Content */
+.aboutPeso-content {
+    flex: 1;
+}
+
+.aboutPeso-content h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.aboutPeso-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Read More About Peso Button */
+.aboutPeso-content .read-more-aboutPeso {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: 1px solid black;
+    transition: 0.3 ease;
+}
+
+.aboutPeso-content .read-more-aboutPeso:hover {
+    background-color: #34495e;
+    border: 1px solid transparent;
+    color: cyan;
+}
+
+/* Window size adaptor hehe */
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0px 20px;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .aboutUs,
+    .aboutPeso {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .aboutUs-img,
+    .aboutPeso-img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .aboutUs-content p,
+    .aboutPeso-content p {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .aboutUs-content .read-more-aboutUs,
+    .aboutPeso-content .read-more-aboutPeso {
+        font-size: 16px;
+    }
+}
+
+/* read more about us section */
+#read-more-aboutUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 5px;
+    height: 100vh;
+    border: 2px pink solid;
+}
+
+#read-more-aboutUs h2 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #34495e;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    border: 2px cyan solid;
+}
+
+/* read more About Us Content */
+.readMoreAboutUs-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: auto;
+    margin-top: -150px;
+    border: 2px pink solid;
+}
+
+.readMoreAboutUs-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    flex: 1;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* read more About Us Image */
+.readMoreAboutUs-img {
+    flex: 1;
+    margin-left: 40px;
+    overflow: hidden;
+    border: 2px #000 solid;
+}
+
+.readMoreAboutUs-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.readMoreAboutUs-img:hover img {
+    transform: scale(1.2);
+}
+
+/* read more about Peso section */
+#read-more-aboutPeso {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 5px;
+    height: 100vh;
+    border: 2px pink solid;
+}
+
+#read-more-aboutPeso h2 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #34495e;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    border: 2px cyan solid;
+}
+
+/* read more About Peso Content */
+.readMoreAboutPeso-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: auto;
+    margin-top: -150px;
+    border: 2px pink solid;
+}
+
+.readMoreAboutPeso-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    flex: 1;
+}
+
+/* read more About Peso Image */
+.readMoreAboutPeso-img {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border: 2px #000 solid;
+}
+
+.readMoreAboutPeso-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.readMoreAboutPeso-img:hover img {
+    transform: scale(1.2);
+}

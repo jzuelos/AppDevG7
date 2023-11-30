@@ -1,0 +1,278 @@
+/* Main Container */
+.mainContainer {
+    position: relative;
+    margin-top: 85px;
+    height: 1000px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#home_logo {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 90px;
+    width: 90px;
+}
+
+/* All H1 */
+h1 {
+    position: absolute;
+    top: 18px;
+    left: 130px;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    width: max-content;
+    display: inline;
+    border: 1px solid;
+}
+
+/* Home 1 & 2 Container */
+.home_con1 {
+    position: relative;
+    height: 44%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid;
+    overflow: hidden;
+}
+
+.home_con2 {
+    position: relative;
+    height: 55%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid;
+    overflow: hidden;
+}
+
+/* home1 container */
+#peso_descr {
+    position: relative;
+    font-size: 20px;
+    left: 3%;
+    width: 50%;
+    margin-top: 7.5%;
+    float: left;
+    line-height: 150%;
+    text-align: justify;
+}
+
+/* Gallery */
+.slider {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: right;
+    margin-top: 7.5%;
+    margin-right: 30px;
+    border: 1px solid;
+}
+
+.slides {
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+.slide img {
+    width: 600px;
+    height: 300px;
+}
+
+/* Navigation Indicator Manual */
+.navigation_manual {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.manual_btn {
+    border: 2px solid rgb(49, 47, 47);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual_btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual_btn:hover {
+    background-color: aqua;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/* Navigation Indicator Auto */
+.navigation_auto {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.navigation_auto div {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation_auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navigation_auto .auto_btn1 {
+    background: aqua;
+}
+
+#radio2:checked~.navigation_auto .auto_btn2 {
+    background: aqua;
+}
+
+#radio3:checked~.navigation_auto .auto_btn3 {
+    background: aqua;
+}
+
+#radio4:checked~.navigation_auto .auto_btn4 {
+    background: aqua;
+}
+
+/* fixed bg */
+.home2_bgcon {
+    background-image: url('images/peso_logo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 120%;
+    opacity: 0.08;
+}
+
+/* home 2 container */
+.home2_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#findjobs_button {
+    position: absolute;
+    margin-top: 2%;
+    width: max-content;
+    right: 26.9%;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: wheat;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#job_descr {
+    position: relative;
+    font-size: 20px;
+    left: 3%;
+    width: 70%;
+    margin-top: 6%;
+    line-height: 150%;
+    text-align: justify;
+    float: left;
+    border: 1px solid;
+}
+
+#jobgal_title{
+    position: relative;
+    clear: both;
+    left: 3%;
+    margin-top: 17%;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.homedl_forms {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    border-left: 0.1px solid;
+    z-index: 2;
+    background-color: #a0b0d6;
+    opacity: 0.90;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.5s;
+}
+
+.homedl_forms:hover {
+    opacity: 1;
+}
+
+.home2_galcon {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 97%;
+    white-space: nowrap;
+    left: 3%;
+    height: 250px;
+    z-index: 1;
+    opacity: 0.3;
+    background-color: white;
+    transition: opacity 0.4s ease-in-out, z-index 0.4s ease-in-out;
+    border: 1px solid;
+}
+
+.home2_galcon:hover {
+    z-index: 3;
+    opacity: 1;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 310px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

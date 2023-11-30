@@ -1,0 +1,245 @@
+/* Navigation Sections */
+body {
+    background-color: white;
+    position: relative;
+    font-family: montserrat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Header */
+nav {
+    position: relative;
+    top: 0;
+    height: 80px;
+    margin: 0;
+    width: 100%;
+    background: #34495e;
+    overflow: hidden;
+    position: fixed;
+    z-index: 4;
+    /* "z-index" higher value = front */
+}
+
+#balink_mainlogo{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    color: rgb(255, 241, 241);  
+    line-height: 80px;
+    margin-left: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+    list-style: none;
+    transition: all 1s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+li a {
+    transition: black 1s ease;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    border: 1px solid white;
+    transition: 1s;
+}
+
+/*highlight effect*/
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: darkcyan;
+    margin: auto;
+    display: block;
+    transition: 0.4s linear;
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    margin-top: -4px;
+}
+
+li a:hover::after {
+    width: 85%;
+}
+
+li a:hover {
+    color: cyan;
+}
+
+/*fade transition*/
+.mainContainer {
+    animation: transitionIn 1s ease;
+    background-color: white;
+    color: black;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* back to top button */
+.toTop {
+    background: transparent;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: darkcyan;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 4;
+}
+
+.toTop.active {
+    bottom: 32px;
+    border: 1px solid darkcyan;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.toTop:hover {
+    color: white;
+    background-color: darkcyan;
+    transform: scale(1.1);
+}
+
+/*fade transition*/
+.mainContainer {
+    animation: transitionIn 1s ease;
+    background-color: white;
+    color: black;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+#f1,
+#f2 {
+    padding-left: 15%;
+    padding-right: 15%;
+    overflow: hidden;
+}
+
+#f1 {
+    position: relative;
+    height: 35%;
+    background-color: rgb(132, 177, 177);
+}
+
+#foot1_logo{
+    position: relative;
+    width: 220px; 
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+#foot1_content{
+    font-size: 13px;
+    line-height: 150%;
+}
+
+#fAbout_button{
+    position: absolute;
+    width: max-content;
+    right: 26.9%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#f2 {
+    position: relative;
+    height: 64%;
+    background-color: #e7e7e7;
+}
+
+#foot2_logo {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    float: left;
+    margin-top: 3%;
+    margin-right: 130px;
+}
+
+.foot2_row {
+    display: flex;
+    margin-top: 10px;
+}
+
+.foot2_column {
+    flex: 50%;
+    margin-right: 40px;
+    font-size: 13px;
+    line-height: 150%;
+}
