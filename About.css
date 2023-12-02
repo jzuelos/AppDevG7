@@ -191,7 +191,7 @@
     transition: .8s ease;
 }
 
-.read-more-aboutPeso:hover, .read-less-aboutPeso{
+.read-more-aboutPeso:hover, .read-less-aboutPeso:hover{
     background-color: #34495e;
     border: 1px solid transparent;
     color: cyan;
