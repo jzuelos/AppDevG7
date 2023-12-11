@@ -2,9 +2,9 @@
 .mainContainer {
     position: relative;
     margin-top: 85px;
-    height: 1000px;
+    height: 1100px;
     padding: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #home_logo {
@@ -196,8 +196,9 @@ h1 {
     right: 28%;
     border-radius: 15px;
     padding: 8px;
-    background-color: wheat;
+    background-color: rgb(240, 186, 181);
     z-index: 1;
+    font-weight: 800;
     text-decoration: none;
 }
 
@@ -206,7 +207,7 @@ h1 {
     font-size: 20px;
     left: 3%;
     width: 69%;
-    margin-top: 6%;
+    margin-top: 7%;
     line-height: 150%;
     text-align: justify;
     float: left;
@@ -226,7 +227,7 @@ h1 {
     position: absolute;
     right: 0;
     width: 25%;
-    height: 94.3%;
+    height: 95.3%;
     border-left: 0.1px solid;
     z-index: 2;
     background-color: #a0b0d6;
@@ -235,24 +236,45 @@ h1 {
     top: 0;
     transition: opacity 0.5s;
     padding: 10px;
+
 }
 
 .homedl_forms:hover {
     opacity: 1;
 }
 
-.forms_container{
-    position: relative;
-    width: 100%;
-    background-color: aquamarine;
+.forms_container {
     display: flex;
-    height: 89%;
     flex-direction: column;
+    height: 92%;
+    overflow-y: auto;
 }
 
-#forms_items{
+.forms_item {
     border: 1px solid;
-    height: 25%;
+    margin: 10px; /* Adjusted margin for spacing */
+    padding: 15px; /* Adjusted padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms_item a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms_item img {
+    width: 60px; /* Adjusted width for the icons */
+    height: 40px; /* Adjusted height for the icons */
+}
+
+.forms_item span.form_title {
+    margin-top: 10px; /* Adjusted margin for spacing */
+    font-size: 16px; /* Adjusted font size */
 }
 
 .home2_galcon {

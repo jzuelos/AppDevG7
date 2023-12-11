@@ -17,3 +17,27 @@ window.addEventListener("scroll" , () => {
         toTop.classList.remove("active");
     }
 });
+
+
+//scrolling image
+var gallery = document.getElementById('horizontal-scroll');
+var scrollSpeed = 2;
+var isScrollingRight = true;
+
+function autoScroll() {
+    if (isScrollingRight) {
+        gallery.scrollLeft += scrollSpeed;
+
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+            isScrollingRight = false; 
+        }
+    } else {
+        gallery.scrollLeft -= scrollSpeed;
+
+        if (gallery.scrollLeft <= 0) {
+            isScrollingRight = true; 
+        }
+    }
+}
+
+setInterval(autoScroll, 50);
