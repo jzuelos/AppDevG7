@@ -41,3 +41,23 @@ function autoScroll() {
 }
 
 setInterval(autoScroll, 50);
+
+function openPrompt() {
+    document.getElementById("overlay").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closePrompt() {
+    document.getElementById("overlay").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+function submitPrompt() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Perform actions with username and password, for example, send them to the server for authentication.
+
+    // Close the prompt after processing the input
+    closePrompt();
+}

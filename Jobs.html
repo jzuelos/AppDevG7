@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BaLink Trabaho/Jobs</title>
-    <link rel="icon" href = "images/balink_logo.ico">
+    <link rel="icon" href="images/balink_logo.ico">
     <link rel="stylesheet" href="Navigation.css">
     <link rel="stylesheet" href="Jobs.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
     <div>
         <nav>
-            <img id = "balink_mainlogo" src="images/balink_logo.png" alt="">
+            <img id="balink_mainlogo" src="images/balink_logo.png" alt="">
             <label class="logo">BaLink Trabaho</label>
             <ul>
                 <li><a href="BaLink Trabaho.html">Home</a></li>
@@ -28,9 +28,21 @@
         </a>
 
     </div>
-    
+
     <div class="mainContainer">
-        Jobs
+        <h2>Data Container</h2>
+        <div class="scrollable-container">
+            <!-- Example data items, you'll replace these with data from MariaDB -->
+            <div class="data-item">
+                <h3>Data Item 1</h3>
+                <p>Description or details about Data Item 1.</p>
+            </div>
+            <div class="data-item">
+                <h3>Data Item 2</h3>
+                <p>Description or details about Data Item 2.</p>
+            </div>
+            <!-- Repeat this structure for each data item -->
+        </div>
     </div>
 
     <script src="Project.js"></script>
@@ -40,9 +52,27 @@
             <img id="foot1_logo" src="images/footer1_logo.png" alt="" width="220px" height="100px">
             <p id="foot1_content">
                 <b>BaLink Trabaho</b><br>
-                Email: <a href="https://mail.google.com/mail/?view=cm&to=peso.camarinesnorte@gmail.com" target=”_blank”>peso.camarinesnorte@gmail.com</a><br>
-                Facebook: <a href="//www.facebook.com/PESOPGCamNorte" target=”_blank”>//www.facebook.com/PESOPGCamNorte</a>
-                <a id="fAbout_button" href="About.html">Learn more...</a>
+                Email: <a href="https://mail.google.com/mail/?view=cm&to=peso.camarinesnorte@gmail.com"
+                    target=”_blank”>peso.camarinesnorte@gmail.com</a><br>
+                Facebook: <a href="//www.facebook.com/PESOPGCamNorte"
+                    target=”_blank”>//www.facebook.com/PESOPGCamNorte</a>
+
+            <div id="overlay" onclick="closePrompt()">
+                <div id="prompt-box" onclick="event.stopPropagation();">
+                    <span id="close-btn" onclick="closePrompt()">×</span>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                    <br>
+                    <label for="password">Password :</label>
+                    <input type="password" id="password">
+                    <br>
+                    <button id = "signin_button">Sign in</button>
+                    <button id = "submit_button" onclick="submitPrompt()">Submit</button>
+                </div>
+            </div>
+            <button id = "admin_button" onclick="openPrompt()">I am an Admin</button>
+
+            <a id="fAbout_button" href="About.html">Learn more...</a>
             </p>
         </div>
         <div id="f2">
