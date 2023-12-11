@@ -30,18 +30,74 @@
     </div>
 
     <div class="mainContainer">
-        <h2>Data Container</h2>
+        <div class="form-container">
+            <label for="inputField" class="label">Search:</label>
+            <input type="text" id="inputField" name="inputField" class="text-field">
+        </div>
         <div class="scrollable-container">
-            <!-- Example data items, you'll replace these with data from MariaDB -->
+            <!-- Example data items -->
             <div class="data-item">
-                <h3>Data Item 1</h3>
-                <p>Description or details about Data Item 1.</p>
+                <h3>Salesman/Driver/Helper</h3>
+                <label>Job Requirements:</label>
+                <p>Willing to do field work/route sales Camarines Norte, With license restriction 1,2, & 3, Honest and
+                    hardworking</p>
+                <label>Job Location:</label>
+                <p>Camarines Norte.</p>
+                <label>Employer Name:</label>
+                <p>Stance Sales & Distribution</p>
+                <label>Contact:</label>
+                <p>𝐡𝐮𝐦𝐚𝐧𝐫𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐝𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭.𝐬𝐬𝐝@𝐠𝐦𝐚𝐢𝐥.𝐜𝐨𝐦 or proceed at:
+                    <br>𝐓𝐫𝐞𝐯𝐨𝐫 𝐖𝐚𝐫𝐞𝐡𝐨𝐮𝐬𝐞 𝐍𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐇𝐢𝐠𝐡𝐰𝐚𝐲, 𝐏𝐮𝐫𝐨𝐤 𝐀𝐜𝐚𝐜𝐢𝐚
+                    𝐏𝐨𝐛𝐥𝐚𝐜𝐢𝐨𝐧 𝟐 𝐁𝐚𝐬𝐮𝐝, 𝐂𝐚𝐦𝐚𝐫𝐢𝐧𝐞𝐬 𝐍𝐨𝐫𝐭𝐞 and look for Ms. Gley.</p>
+                <!-- Image for Job Title 1 -->
+                <img src="images/Job1.jpg" alt="Job 1 Image">
             </div>
+
             <div class="data-item">
-                <h3>Data Item 2</h3>
-                <p>Description or details about Data Item 2.</p>
+                <h3>Tools Technician</h3>
+                <label>Job Requirements:</label>
+                <p>Must graduate of any Electrical, Electronic, Mechanical or Automotive Vocational/ Engineering course.
+                    -Atleast 2 to 3 <br>years of experience as an electrical or mechanical technician.
+                    -Must be good when it comes in Troubleshooting and<br> Problem -solving skills.</p>
+                <label>Job Location:</label>
+                <p>Camarines Norte</p>
+                <label>Employer Name:</label>
+                <p>Ingco Daet</p>
+                <label>Contact:</label>
+                <p>chanceuxdaet@gmail.com</p>
+                <!-- Image for Job Title 2 -->
+                <img src="images/galhome_image2.jpg" alt="Job 2 Image">
             </div>
-            <!-- Repeat this structure for each data item -->
+
+            <div class="data-item">
+                <h3>𝐇𝐨𝐮𝐬𝐞𝐡𝐨𝐥𝐝 𝐒𝐞𝐫𝐯𝐢𝐜𝐞 𝐖𝐨𝐫𝐤𝐞𝐫𝐬</h3>
+                <label>Job Requirements:</label>
+                <p>24-45 years old, Hardworking, can speak and understand english.</p>
+                <label>Job Location:</label>
+                <p>Camarines Norte</p>
+                <label>Employer Name:</label>
+                <p> Baguio Benguet International Recruitment Agency, Special Recruitment Activity (SRA)</p>
+                <label>Contact:</label>
+                <p>3F Public Employment Service Office, Provincial Capitol, Daet, Camarines Norte </p>
+                <!-- Image for Job Title 2 -->
+                <img src="images/galhome_image1.jpg" alt="">
+            </div>
+
+            <div class="data-item">
+                <h3>𝐑𝐞𝐭𝐚𝐢𝐥 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭</h3>
+                <label>Job Requirements:</label>
+                <p>At least High School graduate Physically Fit, Willing to undergo training, With good Customer Service
+                    & <br> Skills</p>
+                <label>Job Location:</label>
+                <p>Camarines Norte</p>
+                <label>Employer Name:</label>
+                <p>Farm Station</p>
+                <label>Contact:</label>
+                <p>farmstationcareers_gmail.com/09508374710</p>
+                <!-- Image for Job Title 2 -->
+                <img src="images/galhome_image3.jpg" alt="">
+            </div>
+            <!-- Repeat this structure for each job item -->
         </div>
     </div>
 
@@ -66,11 +122,11 @@
                     <label for="password">Password :</label>
                     <input type="password" id="password">
                     <br>
-                    <button id = "signin_button">Sign in</button>
-                    <button id = "submit_button" onclick="submitPrompt()">Submit</button>
+                    <button id="signin_button">Sign in</button>
+                    <button id="submit_button" onclick="submitPrompt()">Submit</button>
                 </div>
             </div>
-            <button id = "admin_button" onclick="openPrompt()">I am an Admin</button>
+            <button id="admin_button" onclick="openPrompt()">I am an Admin</button>
 
             <a id="fAbout_button" href="About.html">Learn more...</a>
             </p>

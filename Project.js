@@ -10,7 +10,7 @@ setInterval(function () {
 /* back to top button */
 const toTop = document.querySelector(".toTop");
 
-window.addEventListener("scroll" , () => {
+window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
         toTop.classList.add("active");
     } else {
@@ -29,13 +29,13 @@ function autoScroll() {
         gallery.scrollLeft += scrollSpeed;
 
         if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
-            isScrollingRight = false; 
+            isScrollingRight = false;
         }
     } else {
         gallery.scrollLeft -= scrollSpeed;
 
         if (gallery.scrollLeft <= 0) {
-            isScrollingRight = true; 
+            isScrollingRight = true;
         }
     }
 }
@@ -60,4 +60,9 @@ function submitPrompt() {
 
     // Close the prompt after processing the input
     closePrompt();
+}
+
+function toggleDetails(rowId) {
+    var details = document.getElementById(rowId + 'Details');
+    details.classList.toggle('hidden');
 }

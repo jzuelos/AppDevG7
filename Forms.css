@@ -6,3 +6,42 @@
     border: 3px solid yellow;
     padding: 10px;
 }
+
+img{
+    float: left;
+}
+
+h3{
+    position: relative;
+    margin-left: 100px;
+}
+
+.scrollable-container {
+    position: relative;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    font-size: large;
+    line-height: 1.4;
+}
+
+#spes_title{
+    font-size: 30px;
+    text-align: justify;
+    line-height: 1;
+}
+
+.row {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }

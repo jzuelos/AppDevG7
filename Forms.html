@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BaLink Trabaho/Forms</title>
-    <link rel="icon" href = "images/balink_logo.ico">
+    <link rel="icon" href="images/balink_logo.ico">
     <link rel="stylesheet" href="Navigation.css">
     <link rel="stylesheet" href="Forms.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
     <div>
         <nav>
-            <img id = "balink_mainlogo" src="images/balink_logo.png" alt="">
+            <img id="balink_mainlogo" src="images/balink_logo.png" alt="">
             <label class="logo">BaLink Trabaho</label>
             <ul>
                 <li><a href="BaLink Trabaho.html">Home</a></li>
@@ -30,7 +30,37 @@
     </div>
 
     <div class="mainContainer">
-        Forms
+        <div class="scrollable-container">
+            <p id="spes_title">The Special Program for Employment of Students is DOLE’s youth employment-bridging
+                program which aims to
+                provide
+                temporary employment to poor but deserving students, out-of-school youth, and dependents of displaced or
+                would-be displaced workers during summer and/or Christmas vacation or any time of the year to augment
+                the
+                family’s income to help ensure that beneficiaries are able to pursue their education.</p>
+            <p>Qualifications: <br>
+                1. Students or out-of-school youth (OSY) at least 15 but not more than 30 years of age <br>
+                2. Combined net income after tax of parents, including his/her own, if any, does not exceed the regional
+                poverty
+                threshold <br>
+                3. Students must have obtained a passing general weighted average (GWA) <br>
+                4. OSY must be certified by the local Social Welfare and Development Office (SWDO) as OSY</p>
+            <div class="row" onclick="toggleDetails('row1')">
+                <img src="images/PDFicon.png" alt="" width="50px">
+                <h3>NSRP-Form1</h3>
+                <div id="row1Details" class="hidden">
+                    <form>
+                        <button><a href="Pdfs/NSRP-Form1.pdf" target="_blank">Download</a></button>
+                        <label for="field1"><br>NSRP Form 1 is a National Skills Registration Program (NSRP) form for
+                            job seekers. The NSRP is a program of the Department of Labor and Employment (DOLE). The
+                            program's goal is to maintain a nationwide skills registry using the Skills Registry System
+                            (SRS) database.
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="Project.js"></script>
@@ -40,8 +70,10 @@
             <img id="foot1_logo" src="images/footer1_logo.png" alt="" width="220px" height="100px">
             <p id="foot1_content">
                 <b>BaLink Trabaho</b><br>
-                Email: <a href="https://mail.google.com/mail/?view=cm&to=peso.camarinesnorte@gmail.com" target=”_blank”>peso.camarinesnorte@gmail.com</a><br>
-                Facebook: <a href="//www.facebook.com/PESOPGCamNorte" target=”_blank”>//www.facebook.com/PESOPGCamNorte</a>
+                Email: <a href="https://mail.google.com/mail/?view=cm&to=peso.camarinesnorte@gmail.com"
+                    target=”_blank”>peso.camarinesnorte@gmail.com</a><br>
+                Facebook: <a href="//www.facebook.com/PESOPGCamNorte"
+                    target=”_blank”>//www.facebook.com/PESOPGCamNorte</a>
                 <a id="fAbout_button" href="About.html">Learn more...</a>
             </p>
         </div>
@@ -73,7 +105,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

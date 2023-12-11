@@ -25,7 +25,6 @@ h1 {
     font-size: 40px;
     width: max-content;
     display: inline;
-    border: 1px solid;
 }
 
 /* Home 1 & 2 Container */
@@ -213,7 +212,6 @@ h1 {
     line-height: 150%;
     text-align: justify;
     float: left;
-    border: 1px solid;
 }
 
 #jobgal_title{

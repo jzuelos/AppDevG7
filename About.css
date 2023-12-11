@@ -3,7 +3,6 @@
     position: relative;
     margin-top: 35px;
     height: fit-content;
-    border: 3px solid yellow;
     padding: 20px 40px;
 }
 
@@ -17,7 +16,6 @@
     text-align: center;
     margin: 20px auto;
     margin-top: 25px;
-    border: 2px solid purple;
 }
 
 .heading h1 {
@@ -41,6 +39,8 @@
     font-size: 18px;
     color: darkcyan;
     margin-bottom: 35px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ABOUT US SECTION */
@@ -49,15 +49,18 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid pink;
 }
 
 /* About Us Image */
 .aboutUs-img {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     flex: 1;
+    margin-left: 40px;
     margin-right: 40px;
     overflow: hidden;
-    border: 2px #000 solid;
+    border: 1px solid #34495e;
 }
 
 .aboutUs-img img {
@@ -74,6 +77,7 @@
 /* About Us Content */
 .aboutUs-content {
     flex: 1;
+    margin-right: 40px;
 }
 
 .aboutUs-content h2 {
@@ -87,6 +91,8 @@
     font-size: 18px;
     line-height: 1.5;
     color: black;
+    text-indent: 2em;
+    text-align: justify;
 }
 
 .aboutUs-content .moreAboutUs {
@@ -132,21 +138,24 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    border: 2px solid pink;
 }
 
 /* About Peso Image */
 .aboutPeso-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     margin-left: 40px;
+    margin-right: 40px;
     overflow: hidden;
-    /* border for visualization */
-    border: 2px #000 solid;
+    border: 1px solid #34495e;
+    max-width: 550px;
 }
 
 .aboutPeso-img img {
-    max-width: 100%;
-    height: auto;
+    width: 550px;
+    height: 250px;
     display: block;
     transition: 0.5s ease;
 }
@@ -158,6 +167,7 @@
 /* About Peso Content */
 .aboutPeso-content {
     flex: 1;
+    margin-left: 40px;
 }
 
 .aboutPeso-content h2 {
@@ -171,6 +181,8 @@
     font-size: 18px;
     line-height: 1.5;
     color: black;
+    text-indent: 2em;
+    text-align: justify;
 }
 
 .aboutPeso-content .moreAboutPeso {
