@@ -55,10 +55,7 @@ function closePrompt() {
 function submitPrompt() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-
-    // Perform actions with username and password, for example, send them to the server for authentication.
-
-    // Close the prompt after processing the input
+    
     closePrompt();
 }
 
